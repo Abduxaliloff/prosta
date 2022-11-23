@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/all.min.css">
+  <link rel="stylesheet" href="./style/font.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/swiperbundel.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="nav">
+        <div class="header__logo">
+          <h2 class="head__logo1">simple <span class="head__logo2">design</span></h2>
+          <h3 class="logoname">дизайн интерьера</h3>
+        </div>
+        <div class="header__nav-middle">
+          <span class="header__span">Главная</span>
+          <span class="header__span">Тест</span>
+          <span class="header__span">Каталог</span>
+          <span class="header__span">О нас</span>
+          <span class="header__span">Цены</span>
+        </div>
+        <div class="header__adress">
+          <i class="far fa-phone-alt phone"></i>
+          <div class="header__name">
+            <span class="header__number">+998(99)991-11-79</span>
+            <span class="header__time">с 9:00 до 18:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="head__main">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/2.jpg" alt="image" class="header__img"></div>
+            <div class="swiper-slide"><img src="./images/1.jpg" alt="image" class="header__img"></div>
+            <div class="swiper-slide"><img src="./images/3.jpg" alt="image" class="header__img"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="header__obsh">
+          <div class="zakaz">
+            <div class="header__main__pay">
+              <span class="payment">Мой заказ</span>
+              <span class="ruler">3 х 29 000тг</span>
+            </div>
+            <div class="shopping">
+              <i class="far fa-shopping-bag shop"></i>
+            </div>
+          </div>
+          <div class="konsultat">
+            <button class="header__button">Консультация</button>
+          </div>
+          <div class="soobshat"></div>
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+      </div>
+
+    </div>
+  </header>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

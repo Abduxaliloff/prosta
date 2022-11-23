@@ -1,0 +1,237 @@
+:root{
+  --mont: "Montserrat";
+  --swiper-theme-color: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.05);
+}
+.nav{
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 130px;
+  margin: auto;
+}
+.header__logo{
+  cursor: pointer;
+}
+.header__span{
+  margin-right: 35px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 15px;
+  color: #666666;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.header__span:hover{
+  margin-right: 35px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 15px;
+  color: #BD7048;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.header__span:hover::after{
+  color: #BD7048;
+  transition: 0.5s ease-in;
+  width: 35px;
+  background-color: #BD7048;
+}
+.header__span::after{
+  position: absolute;
+  content: '';
+  top: 28px;
+  right: 0px;
+  width: 0px;
+  height: 1px;
+  background-color: #BD7048;
+}
+.head__logo1{
+  color: #000;
+  text-transform: capitalize;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.head__logo2{
+  color: #BD7048;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.logoname{
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 10px;
+}
+.header__name{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.header__adress{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.phone{
+  margin-right: 20px;
+  font-size: 20px;
+}
+.header__number{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--mont);
+}
+.header__time{
+  font-family: var(--mont);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(59, 59, 59, 0.5);
+}
+.head__main{
+  height: 600px;
+  position: relative;
+}
+html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.zakaz{
+  position: absolute;
+  top: 5%;
+  right: -21%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 251px 30px 53px;
+  background-color: #262626;
+  box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  transition: 0.8s ease-in;
+  cursor: pointer;
+}
+.zakaz:hover{
+  position: absolute;
+  top: 5%;
+  right: -10%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 251px 30px 53px;
+  background-color: #262626;
+  box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+}
+.header__main__pay{
+  display: flex;
+  flex-direction: column;
+  margin-right: 18px;
+}
+.shop{
+  padding: 18px 19px;
+  color: #262626;
+  background-color: #FDFDFD;
+  border-radius: 50%;
+  font-size: 21px;
+  transition: 0.5s ease-in;
+}
+.shop:hover{
+  padding: 18px 19px;
+  color: #262626;
+  background-color: #BD7048;
+  border-radius: 50%;
+  font-size: 21px;
+  transition: 0.5 ease-in;
+}
+.payment{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--mont);
+  color: #fff;
+}
+.ruler{
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  font-family: var(--mont);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header__button{
+  padding: 28px 39px;
+  background-color: #BD7048;
+  border-radius: 100px;
+  border: none;
+  font-family: var(--mont);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+}
